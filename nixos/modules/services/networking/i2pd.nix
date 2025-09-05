@@ -691,7 +691,10 @@ in
                   description = "Connect to particular port at destination.";
                 };
                 type = mkOption {
-                  type = types.enum [ "client" "udpclient" ];
+                  type = types.enum [
+                    "client"
+                    "udpclient"
+                  ];
                   default = "client";
                   description = "Tunnel type for inbound tunnels.";
                 };
@@ -721,7 +724,12 @@ in
                   description = "Service port. Default to the tunnel's listen port.";
                 };
                 type = mkOption {
-                  type = types.enum [ "irc" "http" "server" "udpserver" ];
+                  type = types.enum [
+                    "irc"
+                    "http"
+                    "server"
+                    "udpserver"
+                  ];
                   default = "server";
                   description = "Tunnel type for inbound tunnels.";
                 };
